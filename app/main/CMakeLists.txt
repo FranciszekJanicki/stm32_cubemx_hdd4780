@@ -10,7 +10,7 @@ target_include_directories(app PRIVATE
 
 target_link_libraries(app PRIVATE
     stm32cubemx
-    pcf8574
+    hdd4780
     utility
 )
 

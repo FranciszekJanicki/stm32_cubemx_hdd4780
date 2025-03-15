@@ -1,20 +1,20 @@
-add_library(pcf8574 STATIC)
+add_library(hdd4780 STATIC)
 
-target_sources(pcf8574 PRIVATE 
-    "pcf8574.cpp"
+target_sources(hdd4780 PRIVATE 
+    "hdd4780.cpp"
 )
 
-target_include_directories(pcf8574 PUBLIC 
+target_include_directories(hdd4780 PUBLIC 
     "."
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-target_link_libraries(pcf8574 PRIVATE
+target_link_libraries(hdd4780 PRIVATE
     utility
     stm32cubemx
 )
 
-target_compile_options(pcf8574 PUBLIC
+target_compile_options(hdd4780 PUBLIC
     -std=c++23
     -Wall
     -Wextra

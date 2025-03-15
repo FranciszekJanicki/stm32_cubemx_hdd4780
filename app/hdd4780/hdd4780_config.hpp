@@ -1,11 +1,11 @@
-#ifndef PCF8574_CONFIG_HPP
-#define PCF8574_CONFIG_HPP
+#ifndef HDD4780_CONFIG_HPP
+#define HDD4780_CONFIG_HPP
 
 #include <cstdint>
 
 #define PACKED __attribute__((__packed__))
 
-namespace PCF8574 {
+namespace HDD4780 {
 
     constexpr auto DEVICE_ADDRESS = 0x27;
 
@@ -39,8 +39,8 @@ namespace PCF8574 {
 
     struct Config {};
 
-}; // namespace PCF8574
+}; // namespace HDD4780
 
 #undef PACKED
 
-#endif // PCF8574_CONFIG_HPP
+#endif // HDD4780_CONFIG_HPP

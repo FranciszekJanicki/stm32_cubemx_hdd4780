@@ -1,9 +1,10 @@
 PROJECT_DIR := $(shell pwd)
 BUILD_DIR := ${PROJECT_DIR}/build
-SOURCE_DIR := ${PROJECT_DIR}/Core
+APP_DIR := ${PROJECT_DIR}/app
 DRIVERS_DIR := ${PROJECT_DIR}/Drivers
 REQUIREMENTS_DIR := ${PROJECT_DIR}/requirements
 STM32CUBEMX_DIR := ${PROJECT_DIR}/cmake/stm32cubemx
+UTILITY_DIR := ${APP_DIR}/utility
 
 .PHONY: build
 build: 
@@ -30,6 +31,21 @@ clang-format:
 	for ext in h c cpp hpp; do \
 		find $(SOURCE_DIR) -iname "*.$$ext" -print0 | xargs -0 -r clang-format -i; \
 	done
+
+.PHONY: add-utility
+add-utility:
+	git submodule add -f https://github.com/franciszekjanicki/stm32-utility.git ${UTILITY_DIR}
+
+.PHONY: update-utility
+update-utility:
+	git submodule update --init --recursive
+
+.PHONY: remove-utility
+remove-utility:
+	git submodule deinit -f ${UTILITY_DIR}
+	git rm -rf ${UTILITY_DIR}
+	rm -rf ${UTILITY_DIR}
+	rm -rf .git/modules/app/utility
 
 .PHONY: all
 all:
