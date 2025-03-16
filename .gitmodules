@@ -1,3 +1,6 @@
 [submodule "/home/franek/Documents/stm32-cubemx/stm32-cubemx-pcf8574/app/utility"]
 	path = /home/franek/Documents/stm32-cubemx/stm32-cubemx-pcf8574/app/utility
 	url = https://github.com/franciszekjanicki/stm32-utility.git
+[submodule "/home/franek/Documents/stm32-cubemx/stm32-cubemx-hdd4780/app/utility"]
+	path = /home/franek/Documents/stm32-cubemx/stm32-cubemx-hdd4780/app/utility
+	url = https://github.com/franciszekjanicki/stm32-utility.git
