@@ -5,8 +5,8 @@
 /* Includes */
 /*--------------------------------------------------------------------------------*/
 
+#include "arm_math.h" /* float32_t */
 #include "arr_desc.h"
-#include "arm_math.h"           /* float32_t */
 
 /*--------------------------------------------------------------------------------*/
 /* Macros and Defines */
@@ -21,11 +21,10 @@
 /**
  *  Declare the matrix inputs defined by MATRIX_DEFINE_INPUTS.
  */
-#define MATRIX_DECLARE_INPUTS(suffix)               \
-    ARR_DESC_DECLARE(matrix_##suffix##_a_inputs);   \
-    ARR_DESC_DECLARE(matrix_##suffix##_b_inputs);   \
+#define MATRIX_DECLARE_INPUTS(suffix)             \
+    ARR_DESC_DECLARE(matrix_##suffix##_a_inputs); \
+    ARR_DESC_DECLARE(matrix_##suffix##_b_inputs); \
     ARR_DESC_DECLARE(matrix_##suffix##_invertible_inputs)
-
 
 /*--------------------------------------------------------------------------------*/
 /* Declare Variables */

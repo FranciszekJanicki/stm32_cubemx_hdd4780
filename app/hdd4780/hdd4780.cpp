@@ -1,5 +1,4 @@
 #include "hdd4780.hpp"
-#include "utility.hpp"
 
 namespace HDD4780 {
 

@@ -5,12 +5,11 @@ target_sources(hdd4780 PRIVATE
 )
 
 target_include_directories(hdd4780 PUBLIC 
-    "."
-    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/app/stm32_utility
 )
 
 target_link_libraries(hdd4780 PRIVATE
-    utility
+    stm32_utility
     stm32cubemx
 )
 

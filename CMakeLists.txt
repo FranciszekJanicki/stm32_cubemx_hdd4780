@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.28)
 
 include("cmake/gcc-arm-none-eabi.cmake")
 
-project(stm32-cubemx-hdd4780 LANGUAGES C CXX ASM)
+project(stm32_cubemx_hdd4780 LANGUAGES C CXX ASM)
 
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -22,7 +22,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
 add_subdirectory(cmake/stm32cubemx)
 add_subdirectory(app/main)
-add_subdirectory(app/utility)
+add_subdirectory(app/stm32_utility)
 add_subdirectory(app/hdd4780)
 
 target_compile_options(stm32cubemx INTERFACE 
