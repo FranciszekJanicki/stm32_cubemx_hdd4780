@@ -11,7 +11,7 @@ namespace HDD4780 {
     public:
         HDD4780() noexcept = default;
 
-        HDD4780(I2CDevice&& i2c_device, Config const& config) noexcept;
+        HDD4780(I2CDevice&& i2c_device, Config const& config, Font const& font) noexcept;
 
         HDD4780(HDD4780 const& other) = delete;
         HDD4780(HDD4780&& other) noexcept = default;
@@ -57,6 +57,8 @@ namespace HDD4780 {
         bool initialized_{false};
 
         I2CDevice i2c_device_{};
+
+        Font font_{};
     };
 
     template <std::size_t SIZE>

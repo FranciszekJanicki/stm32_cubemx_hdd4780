@@ -2,8 +2,8 @@
 
 namespace HDD4780 {
 
-    HDD4780::HDD4780(I2CDevice&& i2c_device, Config const& config) noexcept :
-        i2c_device_{std::forward<I2CDevice>(i2c_device)}
+    HDD4780::HDD4780(I2CDevice&& i2c_device, Config const& config, Font const& font) noexcept :
+        i2c_device_{std::forward<I2CDevice>(i2c_device)}, font_{font}
     {
         this->initialize(config);
     }

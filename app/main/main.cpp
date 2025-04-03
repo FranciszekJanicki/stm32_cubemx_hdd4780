@@ -1,4 +1,5 @@
 #include "main.h"
+#include "font5x8.hpp"
 #include "gpio.h"
 #include "hdd4780.hpp"
 #include "hdd4780_config.hpp"
@@ -23,7 +24,9 @@ int main()
 
     auto config = Config{};
 
-    auto hdd4780 = HDD4780::HDD4780{std::move(i2c_device), config};
+    auto font = Font{.char_height = 8U, .char_width = 5U, .font_bitmap = Fonts::font_bitmap};
+
+    auto hdd4780 = HDD4780::HDD4780{std::move(i2c_device), config, font};
 
     while (1) {
     }
