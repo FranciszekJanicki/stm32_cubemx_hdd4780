@@ -25,7 +25,7 @@ int main()
 
     auto hdd4780 = HDD4780::HDD4780{std::move(i2c_device), config};
 
-    while (true) {
+    while (1) {
     }
 
     return 0;
