@@ -4,13 +4,10 @@ Core/*
 Drivers/*
 cmake/*
 
-stm32l476rgtx_flash.ld
-startup_stm32l476xx.s
+*.ld
+*.s
 
-stm32f446retx_flash.ld
-startup_stmf446retx_flash.ld
-
-stm32_cubemx_hdd4780.ioc
+*.ioc
 
 .vscode
 .vscode/*

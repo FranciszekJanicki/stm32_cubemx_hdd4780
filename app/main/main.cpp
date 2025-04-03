@@ -28,6 +28,10 @@ int main()
 
     auto hdd4780 = HDD4780::HDD4780{std::move(i2c_device), config, font};
 
+    hdd4780.send_function_set_command(DL::BITS_8, N::LINES_1, F::DOTS_5x8);
+    hdd4780.send_display_on_off_control_command(true, true, true);
+    hdd4780.send_entry_mode_set_command(false, false);
+
     while (1) {
     }
 

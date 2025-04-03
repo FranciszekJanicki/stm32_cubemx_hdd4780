@@ -21,7 +21,6 @@ namespace HDD4780 {
 
         ~HDD4780() noexcept;
 
-    private:
         std::uint8_t receive_byte() const noexcept;
 
         template <std::size_t SIZE>
@@ -59,6 +58,8 @@ namespace HDD4780 {
         I2CDevice i2c_device_{};
 
         Font font_{};
+
+        std::array<std::uint8_t, FRAME_BUF_SIZE> frame_buf_{};
     };
 
     template <std::size_t SIZE>
