@@ -60,6 +60,10 @@ namespace HDD4780 {
         Font font_{};
 
         std::array<std::uint8_t, FRAME_BUF_SIZE> frame_buf_{};
+
+        void display_frame_buff();
+        void clear_frame_buff();
+        void set_pixel(uint16_t x, uint16_t y,bool light){};
     };
 
     template <std::size_t SIZE>

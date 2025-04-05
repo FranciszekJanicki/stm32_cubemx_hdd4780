@@ -79,4 +79,14 @@ namespace HDD4780 {
         this->transmit_byte(std::bit_cast<std::uint8_t>(SET_DDRAM_ADDRESS{.add = ddram_address}));
     }
 
+    void HDD4780::display_frame_buff()
+    {
+        memset(this->frame_buf_.data(),255,this->frame_buf_.size());
+        this->transmit_bytes(this->frame_buf_);
+
+    }
+    void HDD4780::clear_frame_buff(){
+        memset(this->frame_buf_.data(),0,this->frame_buf_.size());
+        this->transmit_bytes(this->frame_buf_);
+    }
 }; // namespace HDD4780
