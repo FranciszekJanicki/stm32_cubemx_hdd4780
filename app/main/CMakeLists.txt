@@ -1,21 +1,18 @@
-add_executable(main)
+add_executable(app)
 
-target_sources(main PRIVATE 
+target_sources(app PRIVATE 
     "main.cpp"
 )
 
-target_include_directories(main PRIVATE 
-    ${CMAKE_SOURCE_DIR}/app/hdd4780
-    ${CMAKE_SOURCE_DIR}/cmake/stm32cubemx
+target_include_directories(app PRIVATE 
+    ${CMAKE_DIR}/stm32cubemx
 )
 
-target_link_libraries(main PRIVATE
+target_link_libraries(app PRIVATE
     stm32cubemx
-    hdd4780
-    stm32_utility
 )
 
-target_compile_options(main PUBLIC
+target_compile_options(app PUBLIC
     -std=c++23
     -Wall
     -Wextra
