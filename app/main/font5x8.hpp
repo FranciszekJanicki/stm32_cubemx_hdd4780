@@ -8,7 +8,7 @@ namespace Fonts {
     constexpr auto CHAR_WIDTH = 4U;
     constexpr auto CHAR_HEIGHT = 7U;
 
-    std::uint8_t font_bitmap[] = {
+    uint8_t font_bitmap[] = {
 
         /*
          * code=0, hex=0x00, ascii="^@"

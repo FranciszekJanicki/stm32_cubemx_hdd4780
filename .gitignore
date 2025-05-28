@@ -1,9 +1,5 @@
 build/*
 
-Core/*
-Drivers/*
-cmake/*
-
 *.ld
 *.s
 
