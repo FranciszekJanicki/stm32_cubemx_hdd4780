@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 
-#define PACKED __attribute__((packed))
-
 typedef enum {
     HDD4780_CMD_CLEAR_DISPLAY = 0x01,
     HDD4780_CMD_RETURN_HOME = 0x02,
