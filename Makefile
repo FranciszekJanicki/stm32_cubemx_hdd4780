@@ -7,4 +7,4 @@ include make/third_party.mk
 
 .PHONY: all
 all:
-	$(MAKE) clang_format && $(MAKE) build && $(MAKE) flash_uart && $(MAKE) monitor_uart
+	$(MAKE) clang_format && $(MAKE) clang_tidy && $(MAKE) build && $(MAKE) flash_uart && $(MAKE) monitor_uart

@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main()
+int main(void)
 {
     HAL_Init();
     SystemClock_Config();

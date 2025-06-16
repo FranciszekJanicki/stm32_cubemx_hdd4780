@@ -1,18 +1,15 @@
 ---
-# Basic Settings
 IndentWidth: 4
 TabWidth: 4
 UseTab: Never
 ColumnLimit: 100
 
-# Indentation and Formatting Rules
 ConstructorInitializerIndentWidth: 4
 AccessModifierOffset: -4
 IndentAccessModifiers: false
 IndentCaseLabels: true
 NamespaceIndentation: All
 
-# Alignment Settings
 AlignAfterOpenBracket: Align
 AlignConsecutiveDeclarations: false
 AlignConsecutiveAssignments: false
@@ -20,7 +17,6 @@ AlignEscapedNewlines: Left
 AlignOperands: true
 AlignTrailingComments: true
 
-# Breaking and Wrapping Rules
 BinPackArguments: false
 BinPackParameters: false
 BraceWrapping:
@@ -54,7 +50,6 @@ BreakConstructorInitializers: AfterColon
 BreakConstructorInitializersBeforeComma: true
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 
-# Spaces and Padding Rules
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: ControlStatements
 SpaceInEmptyParentheses: false
@@ -65,7 +60,6 @@ SpacesInAngles: false
 SpacesInContainerLiterals: false
 SpacesInParentheses: false
 
-# Other Formatting Options
 Cpp11BracedListStyle: true
 DerivePointerAlignment: false
 DisableFormat: false

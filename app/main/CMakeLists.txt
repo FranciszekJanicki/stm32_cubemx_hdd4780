@@ -1,7 +1,7 @@
 add_executable(app)
 
 target_sources(app PRIVATE 
-    "main.cpp"
+    "main.c"
 )
 
 target_include_directories(app PRIVATE 
@@ -13,7 +13,7 @@ target_link_libraries(app PRIVATE
 )
 
 target_compile_options(app PUBLIC
-    -std=c++23
+    -std=c23
     -Wall
     -Wextra
     -Wconversion
@@ -31,5 +31,14 @@ target_compile_options(app PUBLIC
     -Wdouble-promotion
     -Wimplicit-fallthrough
     -Wcast-align
-    -fconcepts
+    -Wformat=2
+    -Wformat-security
+    -Wmissing-prototypes
+    -Wmissing-declarations
+    -Wstrict-prototypes
+    -Wold-style-definition
+    -Wundef
+    -Wvla
+    -Wpointer-arith
+    -Wstrict-aliasing=2
 )

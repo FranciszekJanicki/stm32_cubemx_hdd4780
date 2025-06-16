@@ -2,8 +2,8 @@ include make/common.mk
 
 .PHONY: clang_tidy
 clang_tidy:
-	for ext in h c cpp hpp; do
-		find $(APP_DIR) -iname "*.$$ext" -print0 | xargs -0 -r clang-tidy -i; \
+	for ext in h c cpp hpp; do \
+		find $(APP_DIR) -iname "*.$$ext" -print0 | xargs -0 -r clang-tidy -fix; \
 	done
 
 .PHONY: clang_format
