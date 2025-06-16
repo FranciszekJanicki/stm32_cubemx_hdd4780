@@ -3,7 +3,6 @@ include make/clang.mk
 include make/cubemx.mk
 include make/flash.mk
 include make/monitor.mk
-include make/third_party.mk
 
 .PHONY: all
 all:

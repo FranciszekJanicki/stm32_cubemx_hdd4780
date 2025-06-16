@@ -4,7 +4,6 @@ DRIVERS_DIR := $(PROJECT_DIR)/Drivers
 CORE_DIR := $(PROJECT_DIR)/Core
 CMAKE_DIR := $(PROJECT_DIR)/cmake
 BUILD_DIR := $(PROJECT_DIR)/build
-UTILITY_DIR := $(APP_DIR)/utility
 MAIN_DIR := $(APP_DIR)/main
 
 PROJECT_NAME := project
